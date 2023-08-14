@@ -3,7 +3,9 @@
 ### A simple app for you to keep track of where your money is going. 
 
 ## Summary 
+[gif of category and year chart]
 Get interactive charts that show you how much money you spent recently, where you spent it, and when you spent the most.  
+[gif of sliding action]
 Also, get a categoric breakdown of your spending habits to see which type of expenditure is costing you the most.
 
 This app allows you to manage your money and get insights on expenses in a user-friendly manner.
