@@ -129,10 +129,9 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 SizedBox(
-                  width: 105,
-                  height: 45,
-                  child: Expanded(
-                      child: ElevatedButton(
+                  height: 47,
+                  width: 103,
+                  child: ElevatedButton(
                     onPressed: () async {
                       DateTime? date = await showDatePicker(
                           context: context,
@@ -151,7 +150,7 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.white,
                             fontSize: 13,
                             fontWeight: FontWeight.w300)),
-                  )),
+                  ),
                 ),
               ])
             ],
@@ -250,30 +249,28 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(
-                    width: 105,
-                    height: 45,
-                    child: Expanded(
-                        child: ElevatedButton(
-                      onPressed: () async {
-                        DateTime? date = await showDatePicker(
-                            context: context,
-                            initialDate: newDate,
-                            firstDate: DateTime(2020),
-                            lastDate: DateTime(2100));
-                        setState(() {
-                          newDate = date!;
-                        });
-                      },
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.redAccent),
-                      child: Text(
-                          '${newDate.year}/${newDate.month}/${newDate.day}',
-                          style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 13,
-                              fontWeight: FontWeight.w300)),
-                    )),
-                  ),
+                      width: 103,
+                      height: 47,
+                      child: ElevatedButton(
+                        onPressed: () async {
+                          DateTime? date = await showDatePicker(
+                              context: context,
+                              initialDate: newDate,
+                              firstDate: DateTime(2020),
+                              lastDate: DateTime(2100));
+                          setState(() {
+                            newDate = date!;
+                          });
+                        },
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.redAccent),
+                        child: Text(
+                            '${newDate.year}/${newDate.month}/${newDate.day}',
+                            style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 13,
+                                fontWeight: FontWeight.w300)),
+                      )),
                 ])
               ]),
           actions: [
